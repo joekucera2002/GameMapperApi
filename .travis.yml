@@ -6,4 +6,5 @@ install:
   - dotnet restore
 
 script:
+  - cd ./src
   - dotnet build
