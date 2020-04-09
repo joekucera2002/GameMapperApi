@@ -10,4 +10,7 @@ install:
 
 script:
   - dotnet build
-  - dotnet test
+  - dotnet test --collect:"XPlat Code Coverage"
+
+  after_script:
+        - bash <(curl -s https://codecov.io/bash)
